@@ -144,19 +144,23 @@ address {
 }
 
 /*quality*/
-/*.quality {
+.quality {
+  padding: 94px 0;
 }
-.quality-titlenone {
-}
+
 .quality-list {
+  display: flex;
+  gap: 30px;
 }
-.quality-item {
-}*/
+/*.quality-item {
+}
+*/
 .quality-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .quality-text {
   line-height: 1.71;
