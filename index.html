@@ -35,38 +35,47 @@
   <body>
     <!--header-->
     <header class="header">
-      <nav class="header-nav">
-        <a class="header-logo link" href="./index.html" lang="en"
-          >Web<span class="accent-header">Studio</span></a
-        >
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link current" href="./index.html">Студія</a>
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header-logo link" href="./index.html" lang="en"
+            >Web<span class="accent-header">Studio</span></a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <ul class="header-list-contact list">
+          <li class="header-contact">
+            <a class="header-contact-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-item">
-            <a class="header-link link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="">Контакти</a>
+          <li class="header-contact">
+            <a class="header-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-list list">
-        <li class="header-contact">
-          <a class="header-contact-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contact">
-          <a class="header-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--hero-->
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
+          <button class="hero-button" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!--Quality-->
       <section class="quality">
@@ -105,7 +114,7 @@
           <li class="work-item">
             <img
               class="work-foto"
-              src="./images/box1.jpg"
+              src="./images/work/box1.jpg"
               alt="займаємось програмуванням"
               width="370"
             />
@@ -113,13 +122,18 @@
           <li class="work-item">
             <img
               class="work-foto"
-              src="./images/box2.jpg"
+              src="./images/work/box2.jpg"
               alt="розробка мобільних додатків"
               width="370"
             />
           </li>
           <li class="work-item">
-            <img class="work-foto" src="./images/box3.jpg" alt="креативний дизайн" width="370" />
+            <img
+              class="work-foto"
+              src="./images/work/box3.jpg"
+              alt="креативний дизайн"
+              width="370"
+            />
           </li>
         </ul>
       </section>
@@ -130,7 +144,7 @@
           <li class="team-item">
             <img
               class="team-foto"
-              src="./images/foto1.jpg"
+              src="./images/team/foto1.jpg"
               alt="фото дизайнера проєкту"
               width="270"
             />
@@ -140,7 +154,7 @@
           <li class="team-item">
             <img
               class="team-foto"
-              src="./images/foto2.jpg"
+              src="./images/team/foto2.jpg"
               alt="фото фронтенд розробника"
               width="270"
             />
@@ -148,14 +162,19 @@
             <p class="team-desc" lang="en">Frontend Developer</p>
           </li>
           <li class="team-item">
-            <img class="team-foto" src="./images/foto3.jpg" alt="фото маркетолога" width="270" />
+            <img
+              class="team-foto"
+              src="./images/team/foto3.jpg"
+              alt="фото маркетолога"
+              width="270"
+            />
             <h3 class="team-title">Микола Тарасов</h3>
             <p class="team-desc" lang="en">Marketing</p>
           </li>
           <li class="team-item">
             <img
               class="team-foto"
-              src="./images/foto4.jpg"
+              src="./images/team/foto4.jpg"
               alt="фото графічного дизайнера"
               width="270"
             />
