@@ -12,12 +12,55 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
+/* reset */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у списков (ul) */
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
+/* Класс для обнуления базовых свойств у ссылок */
 .link {
   text-decoration: none;
+  color: inherit;
 }
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Свойства для обнуления курсива у address */
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,12 +68,12 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*header*/
 
 .header-logo {
