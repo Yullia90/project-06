@@ -167,20 +167,25 @@ address {
   color: var(--second-color);
 }
 /*work*/
-/*.work {
-}*/
+.work {
+  padding: 94px 0;
+}
 .section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--main-color);
+  margin-bottom: 50px;
 }
-/*.work-list {
+.work-list {
+  display: flex;
+  gap: 30px;
 }
-.work-item {
+/*.work-item {
 }
 .work-foto {
-}*/
+}
+*/
 /*team*/
 /*.team {
 }*/
