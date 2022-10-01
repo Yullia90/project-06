@@ -12,7 +12,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
 /* reset */
 html {
   box-sizing: border-box;
@@ -58,8 +57,13 @@ address {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,12 +79,23 @@ address {
 
 /*header*/
 .header {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
-.header-nav,
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-list {
   display: flex;
+  gap: 50px;
 }
 
 .header-logo {
@@ -90,10 +105,7 @@ address {
   line-height: 1.19;
   color: var(--accent);
   display: inline-block;
-  padding-right: 94px;
-}
-.header-list {
-  gap: 50px;
+  margin-right: 93px;
 }
 .accent-header {
   color: var(--main-color);
@@ -109,7 +121,9 @@ address {
   display: flex;
   gap: 50px;
 }
-
+.header-connect {
+  margin-left: auto;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent);
@@ -140,9 +154,14 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-color);
+  max-width: 696px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero-button {
+  border: none;
   background-color: var(--accent);
   display: inline-block;
   font-family: inherit;
@@ -153,20 +172,23 @@ address {
   color: var(--first-color);
   cursor: pointer;
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /*quality*/
 .quality {
-  padding: 94px 0;
+  padding-bottom: 0px;
 }
 
 .quality-list {
   display: flex;
   gap: 30px;
 }
-/*.quality-item {
+.quality-item {
+  width: calc((100%-90px) / 4);
 }
-*/
+
 .quality-title {
   font-size: 14px;
   line-height: 1.14;
@@ -179,9 +201,8 @@ address {
   color: var(--second-color);
 }
 /*work*/
-.work {
-  padding: 94px 0;
-}
+/*.work {
+}*/
 .section-title {
   font-size: 36px;
   line-height: 1.16;
@@ -193,14 +214,15 @@ address {
   display: flex;
   gap: 30px;
 }
-/*.work-item {
+.work-item {
+  width: calc((100%-60px) / 3);
 }
 .work-foto {
 }
-*/
+
 /*team*/
 .team {
-  padding: 94px 0;
+  background: #f5f4fa;
   text-align: center;
 }
 
@@ -209,9 +231,15 @@ address {
   gap: 30px;
 }
 .team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.team-foto {
-  margin-bottom: 30px;
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-title {
   font-weight: 500;
@@ -228,7 +256,7 @@ address {
 /*footer*/
 .footer {
   background: #2f303a;
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .footer-link {
   font-family: 'Raleway', sans-serif;
@@ -248,20 +276,20 @@ address {
   display: block;
   margin-bottom: 20px;
 }
+.footer-list-contact {
+  margin-bottom: 9px;
+}
 .footer-map {
   font-style: normal;
   line-height: 1.71;
   color: var(--first-color);
-  display: block;
-  margin-bottom: 9px;
 }
 .footer-contact {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  display: block;
-  margin-bottom: 9px;
 }
+
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent);
@@ -269,6 +297,7 @@ address {
 /*hero-portfolio*/
 .portfolio {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .portfolio-title {
 }
@@ -279,9 +308,11 @@ address {
 }
 
 .portfolio-item {
+  padding-bottom: 50px;
 }
 
 .portfolio-button {
+  border: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -293,7 +324,6 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  margin-bottom: 50px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -306,9 +336,13 @@ address {
   gap: 30px;
 }
 .portfolio-project-item {
+  width: 370px;
 }
 .portfolio-project-foto {
-  margin-bottom: 20px;
+}
+.portfolio-project-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .portfolio-project-title {
   font-size: 18px;
@@ -321,5 +355,4 @@ address {
   font-size: 16px;
   line-height: 1.87;
   color: var(--second-color);
-  margin-bottom: 50px;
 }
