@@ -131,22 +131,38 @@ address {
 .current {
   color: var(--accent);
 }
+.header-contact:hover,
+.header-contact:focus {
+  fill: var(--accent);
+}
 .header-contact-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
+  justify-content: baseline;
 }
-.header-contact-link:hover {
-  color: var(--accent);
+.header-contact-link:hover .header-icon,
+.header-contact-link:focus .header-icon {
+  fill: var(--accent);
+}
+.header-icon {
+  margin-right: 10px;
 }
 
 /*hero*/
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 1600px;
   text-align: center;
   padding: 200px 0;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -188,7 +204,9 @@ address {
 .quality-item {
   width: calc((100%-90px) / 4);
 }
-
+.quality-icon {
+  margin-bottom: 30px;
+}
 .quality-title {
   font-size: 14px;
   line-height: 1.14;
@@ -208,7 +226,7 @@ address {
   line-height: 1.16;
   text-align: center;
   color: var(--main-color);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -217,8 +235,8 @@ address {
 .work-item {
   width: calc((100%-60px) / 3);
 }
-.work-foto {
-}
+/*.work-foto {
+}*/
 
 /*team*/
 .team {
@@ -239,7 +257,7 @@ address {
 
 .team-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
 }
 .team-title {
   font-weight: 500;
@@ -248,15 +266,89 @@ address {
   color: var(--main-color);
   margin-bottom: 10px;
 }
+
+.team-network-list {
+  display: inline-block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+/*.team-icon {
+}*/
+
+.team-icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  border-radius: 50%;
+  background-color: var(--accent);
+  fill: var(--first-color);
+}
+.network-icon {
+}
+/*.team-icon-link:hover .network-icon,
+.team-icon-link:focus .network-icon {
+  fill: var(--first-color);
+}*/
+/*.current {
+  color: var(--accent);
+}*/
 .team-desc {
   font-size: 16px;
   line-height: 1.18;
   color: var(--second-color);
+  margin-bottom: 16px;
+}
+/*clients*/
+.clients {
+  padding-bottom: 87px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+.clients-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: #afb1b8;
+}
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--accent);
+  border: 1px solid #2196f3;
+}
+.client-icon {
 }
 /*footer*/
 .footer {
   background: #2f303a;
-  padding: 60px 0;
+}
+.footer-contact-web {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.footer-contacts {
+  padding-top: 67px;
+  padding-bottom: 53px;
 }
 .footer-link {
   font-family: 'Raleway', sans-serif;
@@ -274,7 +366,7 @@ address {
 }
 .footer-link {
   display: block;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .footer-list-contact {
   margin-bottom: 9px;
@@ -294,22 +386,60 @@ address {
 .footer-contact:focus {
   color: var(--accent);
 }
+.footer-network {
+  padding-top: 79px;
+  padding-bottom: 93px;
+}
+.footer-network-text {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.footer-network-list {
+  display: flex;
+  gap: 10px;
+}
+.footer-network-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-network-icon:hover,
+.footer-network-icon:focus {
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+.footer-network-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--first-color);
+}
+.network-icon {
+}
 /*hero-portfolio*/
 .portfolio {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.portfolio-title {
-}
+/*.portfolio-title {
+}*/
 .portfolio-list {
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-
-.portfolio-item {
-}
+/*.portfolio-item {
+}*/
 
 .portfolio-button {
   border: none;
@@ -336,11 +466,11 @@ address {
   gap: 30px;
 }
 .portfolio-project-item {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
 }
-.portfolio-project-foto {
-}
+/*.portfolio-project-foto {
+}*/
 .portfolio-project-info {
   padding: 20px 24px;
 }
