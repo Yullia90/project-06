@@ -114,13 +114,6 @@ address {
   color: var(--main-color);
 }
 
-.header-item {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-}
-
 .header-list-contact {
   display: flex;
   gap: 50px;
@@ -130,9 +123,30 @@ address {
   margin-left: auto;
 }
 
+.header-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  position: relative;
+}
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent);
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background: var(--accent);
+  border-radius: 2px;
+  margin: -1px;
 }
 
 .current {
@@ -413,13 +427,12 @@ address {
 .accent {
   color: var(--first-color);
 }
-
-.footer-adress {
+/*.footer-adress {
 }
 
 .footer-list {
 }
-
+*/
 .footer-link {
   display: block;
   padding-bottom: 20px;
@@ -445,9 +458,8 @@ address {
 .footer-contact:focus {
   color: var(--accent);
 }
-
-.footer-network {
-}
+/*.footer-network {
+}*/
 
 .footer-network-text {
   font-size: 14px;
