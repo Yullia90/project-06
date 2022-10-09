@@ -226,12 +226,14 @@ address {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .quality-icon {
-  display: flex;
-  align-items: center;
+  width: 270px;
+  height: 120px;
 }
-
 .quality-title {
   font-size: 14px;
   line-height: 1.14;
@@ -348,16 +350,15 @@ address {
 }
 
 /*clients*/
-.clients {
-  padding-bottom: 87px;
-}
+/*.clients {
+}*/
 
 .clients-list {
   display: flex;
   gap: 30px;
 }
 
-.clients-item {
+.clients-logo {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -367,33 +368,39 @@ address {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 
 .clients-item:hover,
 .clients-item:focus {
-  fill: var(--accent);
+  color: var(--accent);
   border: 1px solid #2196f3;
 }
 
 .client-icon {
+  fill: currentColor;
+}
+.client-icon:hover,
+.client-icon:focus {
+  color: var(--accent);
 }
 
 /*footer*/
 .footer {
   background: #2f303a;
+  padding-top: 87px;
+  padding-bottom: 53px;
 }
 
 .footer-contact-web {
   display: flex;
+  align-items: baseline;
   flex-wrap: wrap;
   gap: 70px;
 }
 
-.footer-contacts {
-  padding-top: 67px;
-  padding-bottom: 53px;
-}
+/*.footer-contacts {
+}*/
 
 .footer-link {
   font-family: 'Raleway', sans-serif;
@@ -440,17 +447,15 @@ address {
 }
 
 .footer-network {
-  padding-top: 79px;
-  padding-bottom: 93px;
 }
 
 .footer-network-text {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
-  padding-bottom: 20px;
+  color: var(--first-color);
+  margin-bottom: 20px;
 }
 
 .footer-network-list {
@@ -458,7 +463,7 @@ address {
   gap: 10px;
 }
 
-.footer-network-icon {
+/*.footer-network-icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -466,7 +471,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .footer-network-icon:hover,
 .footer-network-icon:focus {
@@ -478,10 +483,15 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--first-color);
+  background-color: #ffffff1a;
+  color: var(--first-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 .network-icon {
+  fill: currentColor;
 }
 
 /*hero-portfolio*/
@@ -533,9 +543,13 @@ address {
   width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
 }
+.portfolio-project-item:hover,
+.portfolio-project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /*.portfolio-project-foto {
 }*/
-
 .portfolio-project-info {
   padding: 20px 24px;
 }
