@@ -3,7 +3,6 @@
   --accent: #2196f3;
   --first-color: #ffffff;
   --second-color: #757575;
-  --transition: color 250ms linear;
 }
 
 body {
@@ -130,7 +129,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--main-color);
   position: relative;
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -167,11 +166,11 @@ address {
   color: var(--second-color);
   display: flex;
   align-items: center;
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon {
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-link:hover,
@@ -288,14 +287,10 @@ address {
 
 .work-item {
   width: calc((100%-60px) / 3);
-  position: relative;
 }
 .work-item-over {
-  width: 370px;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
+  position: relative;
 }
-
 .work-top-text {
   font-weight: 700;
   font-size: 14px;
@@ -307,6 +302,12 @@ address {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*.work-foto {
@@ -363,6 +364,8 @@ address {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link:hover,
@@ -408,6 +411,7 @@ address {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-logo:hover,
@@ -418,6 +422,7 @@ address {
 
 .client-icon {
   fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon:hover,
 .client-icon:focus {
@@ -471,13 +476,18 @@ address {
   font-style: normal;
   line-height: 1.71;
   color: var(--first-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-map:hover,
+.footer-map:focus {
+  color: var(--accent);
 }
 
 .footer-contact {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact:hover,
@@ -501,19 +511,13 @@ address {
   gap: 10px;
 }
 
-/*.footer-network-icon {
-  width: 44px;
-  height: 44px;
+.footer-network-icon {
   border-radius: 50%;
-  background-color: #ffffff1a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .footer-network-icon:hover,
 .footer-network-icon:focus {
-  border-radius: 50%;
   background-color: var(--accent);
 }
 
@@ -561,6 +565,8 @@ address {
   cursor: pointer;
   padding: 6px 25px;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
