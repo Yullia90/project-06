@@ -3,6 +3,7 @@
   --accent: #2196f3;
   --first-color: #ffffff;
   --second-color: #757575;
+  --transition: color 250ms linear;
 }
 
 body {
@@ -129,6 +130,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--main-color);
   position: relative;
+  transition: color 250ms linear;
 }
 
 .header-link:hover,
@@ -146,11 +148,11 @@ address {
   left: 0;
   background: var(--accent);
   border-radius: 2px;
-  margin: -1px;
 }
 
 .current {
   color: var(--accent);
+  padding-bottom: 32px;
 }
 /*
 .header-contact:hover,
@@ -165,6 +167,11 @@ address {
   color: var(--second-color);
   display: flex;
   align-items: center;
+  transition: color 250ms linear;
+}
+
+.header-icon {
+  transition: color 250ms linear;
 }
 
 .header-contact-link:hover,
@@ -233,7 +240,7 @@ address {
 }
 
 .quality-item {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 .quality-picture {
   width: 270px;
@@ -243,10 +250,11 @@ address {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
 }
 .quality-icon {
-  width: 270px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
 }
 .quality-title {
   font-size: 14px;
@@ -280,6 +288,25 @@ address {
 
 .work-item {
   width: calc((100%-60px) / 3);
+  position: relative;
+}
+.work-item-over {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-top-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*.work-foto {
@@ -377,16 +404,14 @@ address {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   color: #afb1b8;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-logo:hover,
+.clients-logo:focus {
   color: var(--accent);
   border: 1px solid #2196f3;
 }
@@ -435,7 +460,7 @@ address {
 */
 .footer-link {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-list-contact {
@@ -452,6 +477,7 @@ address {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms linear;
 }
 
 .footer-contact:hover,
@@ -554,6 +580,10 @@ address {
 .portfolio-project-item {
   width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
+  cursor: pointer;
+}
+.portfolio-project-item:hover .portfolio-project-text-top {
+  transform: translateY(0);
 }
 .portfolio-project-item:hover,
 .portfolio-project-item:focus {
@@ -562,6 +592,26 @@ address {
 }
 /*.portfolio-project-foto {
 }*/
+.portfolio-project-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-project-text-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--first-color);
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+
 .portfolio-project-info {
   padding: 20px 24px;
 }
@@ -578,4 +628,50 @@ address {
   font-size: 16px;
   line-height: 1.87;
   color: var(--second-color);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background: var(--first-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 250ms linear;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+.modal-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

@@ -70,7 +70,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" data-modal-open type="button">Замовити послугу</button>
         </div>
       </section>
       <!--Quality-->
@@ -81,7 +81,7 @@
             <li class="quality-item">
               <div class="quality-picture">
                 <svg class="quality-icon" width="70" height="70">
-                <use href="./images/symbol-defs.svg#icon-quality1"></use>
+                <use href="./images/symbol-defs.svg#icon-antenna"></use>
               </svg></div>
               <h3 class="quality-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="quality-text">
@@ -91,7 +91,7 @@
             <li class="quality-item"> 
               <div class="quality-picture">
                 <svg class="quality-icon" width="70" height="70">
-                <use href="./images/symbol-defs.svg#icon-quality2"></use>
+                <use href="./images/symbol-defs.svg#icon-clock"></use>
               </svg></div>
               <h3 class="quality-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="quality-text">
@@ -101,7 +101,7 @@
             <li class="quality-item">
               <div class="quality-picture"> 
                 <svg class="quality-icon" width="70" height="70">
-                <use href="./images/symbol-defs.svg#icon-quality3"></use>
+                <use href="./images/symbol-defs.svg#icon-diagram"></use>
               </svg></div>
               <h3 class="quality-title">ПЛАНУВАННЯ</h3>
               <p class="quality-text">
@@ -111,7 +111,7 @@
             <li class="quality-item"> 
               <div class="quality-picture"> 
               <svg class="quality-icon" width="70 " height="70">
-                <use href="./images/symbol-defs.svg#icon-quality4"></use>
+                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
               </svg></div>
               <h3 class="quality-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="quality-text">
@@ -132,20 +132,28 @@
                 src="./images/work/box1.jpg"
                 alt="займаємось програмуванням"
                 width="370"/>
+                <p class="work-top-text">
+                 Десктопні додатки
+                </p>
             </li>
             <li class="work-item">
-              <img
+             <div class="work-item-over"><img
                 class="work-foto"
                 src="./images/work/box2.jpg"
                 alt="розробка мобільних додатків"
-                width="370"/>
+                width="370"/> <p class="work-top-text">
+                 Мобільні додатки
+                </p>
+              </div> 
             </li>
             <li class="work-item">
               <img
                 class="work-foto"
                 src="./images/work/box3.jpg"
                 alt="креативний дизайн"
-                width="370"/>
+                width="370"/> <p class="work-top-text">
+                 Дизайнерські рішення
+                </p>
             </li>
           </ul>
         </div>
@@ -391,5 +399,14 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden " data-modal>
+       <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-close-icon" wight="18" height="18"><use href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg> 
+        </button>
+       </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
