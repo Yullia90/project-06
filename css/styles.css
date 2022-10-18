@@ -345,7 +345,9 @@ address {
   align-items: center;
   justify-content: center;
 }
-
+.network-icon {
+  fill: currentColor;
+}
 /*.team-icon {
 }*/
 
@@ -368,10 +370,6 @@ address {
   color: var(--first-color);
 }
 
-.network-icon {
-  fill: currentColor;
-}
-
 /*.team-icon-link:hover .network-icon,
 .team-icon-link:focus .network-icon {
   fill: var(--first-color);
@@ -390,7 +388,6 @@ address {
 /*clients*/
 /*.clients {
 }*/
-
 .clients-list {
   display: flex;
   gap: 30px;
@@ -515,10 +512,6 @@ address {
 .footer-network-icon-link:hover,
 .footer-network-icon-link:focus {
   background-color: var(--accent);
-}
-
-.network-icon {
-  fill: var(--first-color);
 }
 
 /*hero-portfolio*/
