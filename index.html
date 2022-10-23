@@ -344,11 +344,10 @@
             </main>
     <!--footer-->
     <footer class="footer">
-      <di class="container footer-contact-web ">
+      <div class="container footer-contact-web ">
         <div class="footer-contacts">
           <a class="footer-link link" href="./index.html" lang="en"
-            >Web<span class="accent">Studio</span></a
-          >
+            >Web<span class="accent">Studio</span></a>
           <address class="footer-adress">
             <ul class="footer-list list">
               <li class="footer-list-contact">
@@ -356,15 +355,13 @@
                   class="footer-map link"
                   href="https://goo.gl/maps/CTmhHQKZqYB2jewa7"
                   target="_blank"
-                  rel="noreferrer noopener"
-                >
+                  rel="noreferrer noopener">
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
               <li class="footer-list-contact">
                 <a class="footer-contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                  >info@devstudio.com</a>
               </li>
               <li>
                 <a class="footer-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -401,18 +398,58 @@
             </li>
           </ul>
         </div>
-      <div class="footer-form">
-        <form name="signup-form">
-  <label>
-    <h3 class="footer-network-text">Підпишіться на розсилку</h3>
-    <input type="email" name="email" class="footer-form-email" placeholder="E-mail"/>
-  </label>
-  <button type="submit" class="footer-button-singup">Підписатися</button>
-</form>
-</div>
+        <div class="footer-form">
+          <form name="signup-form">
+ 
+  <!--<label for="singup">Підпишіться на розсилку</label>
+    <input type="email" name="email" id="singup" class="footer-form-email" placeholder="E-mail"/>-->
+       <label>
+       <h3 class="footer-network-text">Підпишіться на розсилку</h3>
+       <input type="email" name="email" class="footer-form-email" placeholder="E-mail"/>
+       </label> 
+        <button type="submit" class="footer-button-singup">Підписатися
+          <svg class="footer-icon-singup" width="24" height="24">
+       <use href="./images/contact/icon-send.svg#icon-icon-send"></use></svg></button>
+      </form>
+      </div> 
       </div>
     </footer>
-    <div class="backdrop is-hidden " data-modal>
+    <div class="backdrop is-hidden" data-modal>
+     
+      <div class="modal-form"> 
+        <h3 class="form-text">Залиште свої дані, ми вам передзвонимо</h3>
+
+        <form name="form" autocomplete="on">
+
+        <div class="modal-form-field">
+          <label for="name" class="form-label">Ім'я</label>
+        <input type="text" class="form-input" name="name"/>
+      </div>
+          
+
+        <div class="modal-form-field">
+          <label for="telefone" class="form-label">Телефон</label>
+        <input type="tel" class="form-input" name="telefone" />
+      </div>
+         
+
+        <div class="modal-form-field">
+          <label for="email" class="form-label">Пошта</label>
+        <input type="email" class="form-input" name="email" />
+      </div>
+        
+     
+        <div class="modal-form-field"> 
+          <label for="feedback" class="form-label">Коментар</label>
+        <textarea name="feedback" class="form-textarea" rows="5">
+        </textarea>
+    </div>
+         
+
+    <button type="submit" class="modal-form-button">Відправити</button>
+     </form>
+     </div>
+  
        <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-close-icon" wight="18" height="18"><use href="./images/symbol-defs.svg#icon-cross"></use>

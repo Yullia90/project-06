@@ -520,7 +520,17 @@ address {
 
 .footer-form {
   display: flex;
+  /*
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-color);
+  margin-bottom: 20px;*/
 }
+
 .footer-form-email {
   font-weight: 400;
   font-size: 16px;
@@ -546,19 +556,23 @@ address {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--first-color);
   background: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
   margin-left: 12px;
 }
-/*hero-portfolio*/
 
+.footer-icon-singup {
+}
+
+/*hero-portfolio*/
 .portfolio {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+
 /*.portfolio-title {
 }*/
 
@@ -568,6 +582,7 @@ address {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 /*.portfolio-item {
 }*/
 
@@ -687,6 +702,73 @@ address {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
+
+.backdrop.is-hidden {
+  position: relative;
+}
+.modal-form {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+}
+.form-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.modal-form-field {
+  width: 448px;
+  height: 58px;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--second-color);
+}
+
+.form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  gap: 28px;
+}
+
+.form-textarea {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-form-button {
+  width: 200px;
+  height: 50px;
+  background: var(--accent);
+  width: 200px;
+  height: 50px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--first-color);
+}
+
 .modal-button {
   width: 30px;
   height: 30px;
