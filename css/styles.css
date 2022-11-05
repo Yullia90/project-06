@@ -420,17 +420,15 @@ address {
 /*footer*/
 .footer {
   background: #2f303a;
-  padding-top: 87px;
-  padding-bottom: 53px;
-  max-width: 1600px;
-  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-contact-web {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 /*.footer-contacts {
@@ -546,6 +544,11 @@ address {
   border-radius: 4px;
   background-color: transparent;
 }
+.footer-singup {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
 
 .footer-button-singup {
   width: 200px;
@@ -565,10 +568,8 @@ address {
 }
 
 .footer-icon-singup {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
   fill: var(--first-color);
+  margin-left: 10px;
 }
 
 /*hero-portfolio*/
@@ -728,12 +729,12 @@ address {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
   margin-bottom: 12px;
 }
 
 .form-label {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin-bottom: 4px;
   font-size: 12px;
@@ -751,7 +752,7 @@ address {
 }
 
 .form-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -778,8 +779,9 @@ address {
 }
 
 .form-textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -802,7 +804,6 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-textarea:hover,
 .form-textarea:focus {
   border: 1px solid var(--accent);
   outline: transparent;
@@ -824,6 +825,11 @@ address {
   border-radius: 2px;
   margin-right: 8px;
 }*/
+.modal-privacy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
 .modal-text {
   font-weight: 400;
@@ -831,7 +837,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 30px;
+
   display: flex;
   align-items: center;
 }
@@ -854,7 +860,7 @@ address {
   fill: var(--first-color);
 }
 
-.modal-privacy {
+.text-privacy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
