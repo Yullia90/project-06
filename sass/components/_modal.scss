@@ -21,13 +21,14 @@
   border-radius: 4px;
   padding: 40px;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
-}
 
 .backdrop.is-hidden {
   position: relative;
+  &.modal {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
 }
+
 .modal-form {
   position: absolute;
   top: 45%;
@@ -76,14 +77,9 @@
   cursor: pointer;
   outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:focus {
-  border: 1px solid var(--accent);
-}
-
-.form-input:focus + .modal-icon {
-  fill: var(--accent);
+  &:focus {
+    border: 1px solid var(--accent);
+  }
 }
 
 .modal-icon {
@@ -92,6 +88,9 @@
   transform: translateY(-50%);
   left: 5px;
   margin-left: 11px;
+  .form-input:focus + & {
+    fill: var(--accent);
+  }
 }
 
 .form-textarea {
@@ -110,20 +109,19 @@
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    border: 1px solid var(--accent);
+    outline: transparent;
+  }
 }
 
-.form-textarea::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-textarea:focus {
-  border: 1px solid var(--accent);
-  outline: transparent;
-}
 /*
 .input-check:checked + .modal-text::before {
   background-color: var(--accent);
@@ -153,7 +151,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-
   display: flex;
   align-items: center;
 }
@@ -168,12 +165,11 @@
   align-items: center;
   justify-content: center;
   fill: transparent;
-}
-
-.input-check:checked + .modal-text .modal-check {
-  background-color: var(--accent);
-  border-color: transparent;
-  fill: var(--first-color);
+  .input-check:checked + & {
+    background-color: var(--accent);
+    border-color: transparent;
+    fill: var(--first-color);
+  }
 }
 
 .text-privacy {
@@ -217,10 +213,10 @@
   justify-content: center;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-button:hover,
-.modal-button:focus {
-  fill: var(--accent);
+  &:hover,
+  &:focus {
+    fill: var(--accent);
+  }
 }
 
 .is-hidden {

@@ -109,12 +109,11 @@ body {
   padding: 40px;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
-}
-
 .backdrop.is-hidden {
   position: relative;
+}
+.backdrop.is-hidden.modal {
+  transform: translate(-50%, -50%) scaleY(0);
 }
 
 .modal-form {
@@ -165,13 +164,8 @@ body {
   outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-input:focus {
   border: 1px solid var(--accent);
-}
-
-.form-input:focus + .modal-icon {
-  fill: var(--accent);
 }
 
 .modal-icon {
@@ -180,6 +174,9 @@ body {
   transform: translateY(-50%);
   left: 5px;
   margin-left: 11px;
+}
+.form-input:focus + .modal-icon {
+  fill: var(--accent);
 }
 
 .form-textarea {
@@ -199,7 +196,6 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
 }
-
 .form-textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -207,7 +203,6 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -215,7 +210,6 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -223,7 +217,6 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-textarea:focus {
   border: 1px solid var(--accent);
   outline: transparent;
@@ -272,7 +265,6 @@ body {
   justify-content: center;
   fill: transparent;
 }
-
 .input-check:checked + .modal-text .modal-check {
   background-color: var(--accent);
   border-color: transparent;
@@ -322,9 +314,7 @@ body {
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   fill: var(--accent);
 }
 
@@ -387,12 +377,14 @@ body {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-link:hover,
-.header-link:focus {
+.header-link:hover, .header-link:focus {
   color: var(--accent);
 }
 
+.current {
+  color: var(--accent);
+  padding-bottom: 32px;
+}
 .current::after {
   content: "";
   position: absolute;
@@ -403,11 +395,6 @@ body {
   left: 0;
   background: var(--accent);
   border-radius: 2px;
-}
-
-.current {
-  color: var(--accent);
-  padding-bottom: 32px;
 }
 
 /*
@@ -424,9 +411,7 @@ body {
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-contact-link:hover,
-.header-contact-link:focus {
+.header-contact-link:hover, .header-contact-link:focus {
   color: var(--accent);
 }
 
@@ -622,9 +607,7 @@ body {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-icon-link:hover,
-.team-icon-link:focus {
+.team-icon-link:hover, .team-icon-link:focus {
   background-color: var(--accent);
   color: var(--first-color);
 }
@@ -662,9 +645,7 @@ body {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-logo:hover,
-.clients-logo:focus {
+.clients-logo:hover, .clients-logo:focus {
   color: var(--accent);
   border: 1px solid #2196f3;
 }
@@ -722,9 +703,7 @@ body {
   color: var(--first-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-map:hover,
-.footer-map:focus {
+.footer-map:hover, .footer-map:focus {
   color: var(--accent);
 }
 
@@ -734,9 +713,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-contact:hover,
-.footer-contact:focus {
+.footer-contact:hover, .footer-contact:focus {
   color: var(--accent);
 }
 
@@ -767,9 +744,7 @@ body {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-network-icon-link:hover,
-.footer-network-icon-link:focus {
+.footer-network-icon-link:hover, .footer-network-icon-link:focus {
   background-color: var(--accent);
 }
 
@@ -859,9 +834,7 @@ body {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-button:hover, .portfolio-button:focus {
   color: var(--first-color);
   background-color: var(--accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -878,20 +851,13 @@ body {
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-project-item:hover,
-.portfolio-project-item:focus {
+.portfolio-project-item:hover, .portfolio-project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-project-gallery {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-project-gallery:hover .portfolio-project-text-top,
-.portfolio-project-gallery:focus .portfolio-project-text-top {
-  transform: translateY(0);
 }
 
 /*.portfolio-project-foto {
@@ -915,6 +881,9 @@ body {
   height: 100%;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-project-gallery:hover .portfolio-project-text-top, .portfolio-project-gallery:focus .portfolio-project-text-top {
+  transform: translateY(0);
 }
 
 .portfolio-project-info {

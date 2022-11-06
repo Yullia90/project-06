@@ -46,10 +46,10 @@
   line-height: 1.71;
   color: var(--first-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-map:hover,
-.footer-map:focus {
-  color: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .footer-contact {
@@ -57,12 +57,12 @@
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent);
-}
 /*.footer-network {
 }*/
 
@@ -90,11 +90,10 @@
   height: 44px;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-network-icon-link:hover,
-.footer-network-icon-link:focus {
-  background-color: var(--accent);
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+  }
 }
 
 .footer-form {
