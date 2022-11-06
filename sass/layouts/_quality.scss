@@ -1,0 +1,39 @@
+/*quality*/
+.quality {
+  padding-bottom: 0px;
+}
+
+.quality-list {
+  display: flex;
+  gap: 30px;
+}
+
+.quality-item {
+  width: calc((100% - 90px) / 4);
+}
+.quality-picture {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.quality-icon {
+  width: 70px;
+  height: 70px;
+}
+.quality-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.quality-text {
+  line-height: 1.71;
+  color: var(--second-color);
+}
