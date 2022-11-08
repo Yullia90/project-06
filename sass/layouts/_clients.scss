@@ -1,12 +1,12 @@
 /*clients*/
 /*.clients {
 }*/
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
 }
 
-.clients-logo {
+.clients__logo {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -23,6 +23,6 @@
   }
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
