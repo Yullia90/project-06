@@ -661,59 +661,50 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-contact-web {
+.contact-web {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-/*.footer-contacts {
+/*.contacts {
 }*/
-.footer-link {
+.contacts__link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .accent {
   color: var(--first-color);
 }
 
-/*.footer-adress {
-}
-
-.footer-list {
-}
-*/
-.footer-link {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer-list-contact {
+.contacts__contacts-type {
   margin-bottom: 9px;
 }
 
-.footer-map {
+.contacts__map {
   font-style: normal;
   line-height: 1.71;
   color: var(--first-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-map:hover, .footer-map:focus {
+.contacts__map:hover, .contacts__map:focus {
   color: var(--accent);
 }
 
-.footer-contact {
+.contacts__contact {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contact:hover, .footer-contact:focus {
+.contacts__contact:hover, .contacts__contact:focus {
   color: var(--accent);
 }
 
