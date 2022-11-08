@@ -8,10 +8,10 @@
   gap: 30px;
 }
 
-.quality-item {
+.quality-list__item {
   width: calc((100% - 90px) / 4);
 }
-.quality-picture {
+.quality-list__picture {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -21,11 +21,11 @@
   justify-content: center;
   border-radius: 4px;
 }
-.quality-icon {
+.quality-list__icon {
   width: 70px;
   height: 70px;
 }
-.quality-title {
+.quality-list__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   margin-bottom: 10px;
 }
 
-.quality-text {
+.quality-list__text {
   line-height: 1.71;
   color: var(--second-color);
 }
