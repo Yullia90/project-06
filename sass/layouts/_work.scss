@@ -2,7 +2,7 @@
 /*.work {
 }*/
 
-.section-title {
+.section__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -10,18 +10,18 @@
   margin-bottom: 50px;
 }
 
-.work-list {
+.image__list {
   display: flex;
   gap: 30px;
 }
 
-.work-item {
+.image__item {
   width: calc((100% - 60px) / 3);
 }
-.work-item-over {
+.image__over {
   position: relative;
 }
-.work-top-text {
+.work__top-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
