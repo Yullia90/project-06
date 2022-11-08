@@ -708,9 +708,9 @@ body {
   color: var(--accent);
 }
 
-/*.footer-network {
+/*.network {
 }*/
-.footer-network-text {
+.network__text {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -719,12 +719,12 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-network-list {
+.network__list {
   display: flex;
   gap: 10px;
 }
 
-.footer-network-icon-link {
+.network__icon-link-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -735,11 +735,11 @@ body {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-network-icon-link:hover, .footer-network-icon-link:focus {
+.network__icon-link-footer:hover, .network__icon-link-footer:focus {
   background-color: var(--accent);
 }
 
-.footer-form {
+.form {
   display: flex;
   /*
   align-items: center;
@@ -752,7 +752,7 @@ body {
   margin-bottom: 20px;*/
 }
 
-.footer-form-email {
+.form__email {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -767,13 +767,13 @@ body {
   background-color: transparent;
 }
 
-.footer-singup {
+.singup {
   display: inline-block;
   align-items: center;
   justify-content: center;
 }
 
-.footer-button-singup {
+.button__singup {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -791,7 +791,7 @@ body {
   border: none;
 }
 
-.footer-icon-singup {
+.icon__singup {
   margin-left: 10px;
 }
 
