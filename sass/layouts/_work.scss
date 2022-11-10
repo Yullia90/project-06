@@ -1,6 +1,19 @@
 /*work*/
-/*.work {
-}*/
+.work {
+  @media screen and (max-width: 1200px) {
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
 
 .section__title {
   font-size: 36px;
@@ -18,9 +31,11 @@
 .image__item {
   width: calc((100% - 60px) / 3);
 }
+
 .image__over {
   position: relative;
 }
+
 .work__top-text {
   font-weight: 700;
   font-size: 14px;

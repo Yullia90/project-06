@@ -6,11 +6,29 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  width: 100%;
   text-align: center;
   padding: 200px 0;
   margin: 0 auto;
 }
+
+/*.hero__container {
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 768px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  }
+}*/
 
 .hero__title {
   font-weight: 900;
