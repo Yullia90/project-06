@@ -528,77 +528,83 @@
     <!--footer-->
     <footer class="footer">
       <div class="container contact-web">
-        <div class="contacts">
-          <div class="contacts__adress">
+        <div class="footer-tablet">
+          <div class="contacts">
             <a class="contacts__link link" href="./index.html" lang="en"
               >Web<span class="accent">Studio</span></a
             >
-            <ul class="contacts__list list">
-              <li class="contacts__contacts-type">
-                <a
-                  class="contacts__map link"
-                  href="https://goo.gl/maps/CTmhHQKZqYB2jewa7"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
+            <address class="contacts__adress">
+              <ul class="contacts__list list">
+                <li class="contacts__contacts-type">
+                  <a
+                    class="contacts__map link"
+                    href="https://goo.gl/maps/CTmhHQKZqYB2jewa7"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="contacts__contacts-type">
+                  <a class="contacts__contact link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="contacts__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="network">
+            <h3 class="network__text">приєднуйтесь</h3>
+            <ul class="network__list list">
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="instagram">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="contacts__contacts-type">
-                <a class="contacts__contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="twitter">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li>
-                <a class="contacts__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="facebook">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="linkedin">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="network">
-          <h3 class="network__text">приєднуйтесь</h3>
-          <ul class="network__list list">
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="instagram">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="twitter">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="facebook">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="linkedin">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
         <div class="form">
-          <form name="signup__form">
-            <h3 class="network__text">Підпишіться на розсилку</h3>
-            <label>
-              <input type="email" name="email" class="form__email" placeholder="E-mail" />
-            </label>
-            <div class="singup">
-              <button type="submit" class="button__singup">
-                Підписатися
-                <svg class="icon__singup" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+          <h3 class="network__text">Підпишіться на розсилку</h3>
+          <div role="group" class="send-button">
+            <form class="signup__form">
+              <div class="send-email">
+                <label>
+                  <input type="email" name="email" class="form__email" placeholder="E-mail" />
+                </label>
+              </div>
+              <div class="singup">
+                <button type="submit" class="button__singup">
+                  Підписатися
+                  <svg class="icon__singup" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>

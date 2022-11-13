@@ -16,7 +16,7 @@
   }
 }
 
-.contacts {
+.footer-tablet {
   @media screen and (min-width: 320px) {
     margin-bottom: 60px;
   }
@@ -33,6 +33,11 @@
     margin-bottom: 0;
   }
 }
+.contacts {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 
 .contacts__link {
   font-family: 'Raleway', sans-serif;
@@ -40,33 +45,23 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent);
-
-  @media screen and (min-width: 420px) {
-    text-align: center;
-  }
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-bottom: 20px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: block;
-    margin-bottom: 20px;
-  }
+  display: block;
+  margin-bottom: 20px;
 }
 
 .accent {
   color: var(--first-color);
-  text-align: center;
-}
-
-.contacts__adress {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 
 .contacts__contacts-type {
   margin-bottom: 9px;
+}
+
+.contacts__list {
+  display: block;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .contacts__map {
@@ -93,12 +88,6 @@
 
 /*.network {
 }*/
-.network {
-  @media screen and (min-width: 420px) {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-}
 
 .network__text {
   font-size: 14px;
@@ -111,14 +100,16 @@
 
 .network__list {
   display: flex;
-  gap: 10px;
   width: 206px;
+  gap: 10px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
   }
 }
-
+.network__icon {
+  fill: var(--first-color);
+}
 .network__icon-link-footer {
   display: flex;
   align-items: center;
@@ -141,6 +132,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+.signup__form {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -148,15 +147,19 @@
     align-items: center;
   }
 }
-/*
-  align-items: center;
-  justify-content: center;
+
+.network__text {
+  display: flex;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-color);
-  margin-bottom: 20px;*/
+  margin-bottom: 20px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+}
 
 .form__email {
   font-weight: 400;
@@ -171,27 +174,30 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
-  @media screen and (min-width: 420px) {
-    margin-bottom: 20px;
-  }
 }
 
 .singup {
-  /*display: inline-block;
+  display: inline-block;
   align-items: center;
-  justify-content: center;*/
-  @media screen and (min-width: 420px) {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+  justify-content: center;
+}
+
+.send-email input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--hero-background-color);
+  color: var(--header-background-color);
+  &:focus {
+    color: var(--header-background-color);
+    outline-color: var(--accent-color);
   }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 290px;
   }
 }
 
@@ -209,8 +215,10 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 12px;
   border: none;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .icon__singup {

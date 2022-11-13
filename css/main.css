@@ -1115,12 +1115,12 @@ mob-soc-item:not(:last-child)::after {
 }
 
 @media screen and (min-width: 320px) {
-  .contacts {
+  .footer-tablet {
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts {
+  .footer-tablet {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -1128,11 +1128,17 @@ mob-soc-item:not(:last-child)::after {
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts {
+  .footer-tablet {
     display: flex;
     gap: 70px;
     align-items: baseline;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contacts {
+    margin-bottom: 60px;
   }
 }
 
@@ -1142,38 +1148,25 @@ mob-soc-item:not(:last-child)::after {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent);
-}
-@media screen and (min-width: 420px) {
-  .contacts__link {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacts__link {
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__link {
-    display: block;
-    margin-bottom: 20px;
-  }
+  display: block;
+  margin-bottom: 20px;
 }
 
 .accent {
   color: var(--first-color);
-  text-align: center;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .contacts__adress {
-    margin-bottom: 60px;
-  }
 }
 
 .contacts__contacts-type {
   margin-bottom: 9px;
+}
+
+.contacts__list {
+  display: block;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contacts__list {
+    text-align: center;
+  }
 }
 
 .contacts__map {
@@ -1198,13 +1191,6 @@ mob-soc-item:not(:last-child)::after {
 
 /*.network {
 }*/
-@media screen and (min-width: 420px) {
-  .network {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-}
-
 .network__text {
   font-size: 14px;
   line-height: 1.14;
@@ -1216,14 +1202,18 @@ mob-soc-item:not(:last-child)::after {
 
 .network__list {
   display: flex;
-  gap: 10px;
   width: 206px;
+  gap: 10px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .network__list {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.network__icon {
+  fill: var(--first-color);
 }
 
 .network__icon-link-footer {
@@ -1247,25 +1237,49 @@ mob-soc-item:not(:last-child)::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .signup__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .form {
+  .signup__form {
     display: flex;
     align-items: center;
   }
 }
 
-/*
-  align-items: center;
-  justify-content: center;
+.network__text {
+  display: flex;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-color);
-  margin-bottom: 20px;*/
+  margin-bottom: 20px;
+}
+
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+}
+
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+}
+
 .form__email {
   font-weight: 400;
   font-size: 16px;
@@ -1280,34 +1294,31 @@ mob-soc-item:not(:last-child)::after {
   border-radius: 4px;
   background-color: transparent;
 }
-@media screen and (min-width: 420px) {
-  .form__email {
-    margin-bottom: 20px;
-  }
-}
 
 .singup {
-  /*display: inline-block;
+  display: inline-block;
   align-items: center;
-  justify-content: center;*/
+  justify-content: center;
 }
-@media screen and (min-width: 420px) {
-  .singup {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-  }
+
+.send-email input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--hero-background-color);
+  color: var(--header-background-color);
 }
-@media screen and (min-width: 768px) {
-  .singup {
-    margin-bottom: 20px;
-  }
+.send-email input:focus {
+  color: var(--header-background-color);
+  outline-color: var(--accent-color);
 }
-@media screen and (min-width: 1200px) {
-  .singup {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .send-email input {
+    width: 290px;
   }
 }
 
@@ -1325,8 +1336,12 @@ mob-soc-item:not(:last-child)::after {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 12px;
   border: none;
+}
+@media screen and (min-width: 1200px) {
+  .button__singup {
+    margin-left: 12px;
+  }
 }
 
 .icon__singup {
