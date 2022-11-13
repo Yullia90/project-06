@@ -393,18 +393,21 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu {
     display: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-color);
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .menu .menu__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.menu a {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation__logo {
@@ -1077,7 +1080,6 @@ mob-soc-item:not(:last-child)::after {
 .clients__logo {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
   height: 92px;
   display: flex;
   align-items: center;
