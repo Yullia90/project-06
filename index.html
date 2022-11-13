@@ -69,6 +69,91 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-open_button" data-menu-open>
+          <svg class="modal-menu-icon" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mob-menu" data-menu>
+          <div class="container">
+            <div class="mob-menu__top">
+              <button type="button" class="menu-close_button" data-menu-close>
+                <svg class="modal-close-icon" height="40">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link current" href="./index.html">Студія</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu__bottom">
+              <div class="mob-connect">
+                <ul class="mob-connect__list list">
+                  <li class="mob-connect__item">
+                    <a class="mob-connect__link link" href="tel:+380961111111"
+                      ><svg class="mob-connect__icon" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#icon-telefone"></use></svg
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mob-connect__item">
+                    <a class="mob-connect__email link" href="mailto:info@devstudio.com"
+                      ><svg class="mob-connect__icon" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-email"></use></svg
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="mob-soc__list list">
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="instagram"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >instagram</a
+                  >
+                </li>
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="twitter"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >twitter</a
+                  >
+                </li>
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="facebook"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >facebook</a
+                  >
+                </li>
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -444,10 +529,10 @@
     <footer class="footer">
       <div class="container contact-web">
         <div class="contacts">
-          <a class="contacts__link link" href="./index.html" lang="en"
-            >Web<span class="accent">Studio</span></a
-          >
           <div class="contacts__adress">
+            <a class="contacts__link link" href="./index.html" lang="en"
+              >Web<span class="accent">Studio</span></a
+            >
             <ul class="contacts__list list">
               <li class="contacts__contacts-type">
                 <a
@@ -517,7 +602,8 @@
         </div>
       </div>
     </footer>
-    <!--<div class="backdrop is-hidden" data-modal>
+
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-close-icon" height="18">
@@ -581,7 +667,8 @@
           <button type="submit" class="modal-form-button">Відправити</button>
         </form>
       </div>
-    </div>-->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

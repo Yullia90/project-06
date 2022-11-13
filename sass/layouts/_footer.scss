@@ -6,36 +6,31 @@
 }
 
 .contact-web {
-  /* display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  justify-content: space-between;*/
-  @media screen and (min-width: 420px) {
-    width: 420px;
-    /*text-align: center;*/
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
+    align-items: baseline;
   }
 }
 
 .contacts {
-  @media screen and (min-width: 420px) {
-    text-align: center;
+  @media screen and (min-width: 320px) {
+    margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
-    width: 720px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+    margin-bottom: 0;
   }
 }
 
@@ -65,13 +60,8 @@
 }
 
 .contacts__adress {
-  @media screen and (min-width: 420px) {
-    margin-top: 20px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 60px;
-    text-align: center;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
   }
 }
 
@@ -122,6 +112,11 @@
 .network__list {
   display: flex;
   gap: 10px;
+  width: 206px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .network__icon-link-footer {
@@ -141,14 +136,16 @@
 }
 
 .form {
-  @media screen and (min-width: 420px) {
-    text-align: center;
-  }
-  @media screen and (min-width: 768px) {
-    width: 720px;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: center;
   }
 }
 /*

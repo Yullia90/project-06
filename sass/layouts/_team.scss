@@ -2,14 +2,27 @@
 .team {
   background: #f5f4fa;
   text-align: center;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .team__item {
