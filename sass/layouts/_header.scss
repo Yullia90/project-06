@@ -34,7 +34,6 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
@@ -155,18 +154,20 @@
 }
 
 .mob-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
+  left: 0;
   background-color: var(--first-color);
   width: 100vw;
   height: 100vh;
+  position: fixed;
   z-index: 1;
   padding-left: 40px;
   padding-bottom: 48px;
   @media screen and (min-width: 768px) {
     display: none;
   }
-  > .container {
+  > .containerr__mob-menu {
     height: 100%;
     width: 100%;
     display: flex;
@@ -204,10 +205,10 @@
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #212121;
   &:not(:last-child) {
     margin-bottom: 32px;
     text-decoration: none;
+    &:hover,
     &:focus {
       color: var(--accent);
     }
