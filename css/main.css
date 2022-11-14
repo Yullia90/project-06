@@ -1374,9 +1374,17 @@ input::placeholder {
 }*/
 .portfolio-list {
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  flex-direction: row;
   margin-bottom: 50px;
+  justify-content: center;
+  gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 /*.portfolio-item {
@@ -1406,8 +1414,14 @@ input::placeholder {
   gap: 30px;
 }
 
+portfolio-project .portfolio-project-foto {
+  width: 370px;
+  height: 294px;
+  display: block;
+}
+
 .portfolio-project-item {
-  width: calc((100% - 60px) / 3);
+  /*width: calc((100% - 60px) / 3);*/
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

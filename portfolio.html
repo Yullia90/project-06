@@ -69,6 +69,85 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-open_button" data-menu-open>
+          <svg class="modal-menu-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container__mob-menu">
+            <div class="mob-menu__top">
+              <button type="button" class="menu-close_button" data-menu-close>
+                <svg class="modal-close-icon" width="40" height="40">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link" href="./index.html">Студія</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link current" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu__bottom">
+              <div class="mob-connect">
+                <ul class="mob-connect__list list">
+                  <li class="mob-connect__item">
+                    <a class="mob-connect__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                  <li class="mob-connect__item">
+                    <a class="mob-connect__email link" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="mob-soc__list list">
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="instagram"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="twitter"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="facebook"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-soc__item">
+                  <a
+                    class="mob-soc__icon"
+                    href="linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -97,11 +176,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery"
                 ><div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project1.jpg"
-                    alt="веб-сайт"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-mobile.jpg    1x,
+                        ./images/portfolio/project1-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-tablet.jpg    1x,
+                        ./images/portfolio/project1-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project1.jpg    1x,
+                        ./images/portfolio/project1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project1.jpg    1x,
+                        ./images/portfolio/project1-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project1.jpg"
+                      alt="веб-сайт"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -117,11 +224,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery">
                 <div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project2.jpg"
-                    alt="дизайнерський постер"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-mobile.jpg    1x,
+                        ./images/portfolio/project2-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-tablet.jpg    1x,
+                        ./images/portfolio/project2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project2.jpg    1x,
+                        ./images/portfolio/project2-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project2.jpg    1x,
+                        ./images/portfolio/project2-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project2.jpg"
+                      alt="дизайнерський постер"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -137,11 +272,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery">
                 <div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project3.jpg"
-                    alt="логотип ресторану"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-mobile.jpg    1x,
+                        ./images/portfolio/project3-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project3-tablet.jpg    1x,
+                        ./images/portfolio/project3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project3.jpg    1x,
+                        ./images/portfolio/project3-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project3.jpg    1x,
+                        ./images/portfolio/project3-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project3.jpg"
+                      alt="логотип ресторану"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -157,11 +320,40 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery"
                 ><div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project4.jpg"
-                    alt="навушники"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-mobile.jpg    1x,
+                        ./images/portfolio/project4-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project4-tablet.jpg    1x,
+                        ./images/portfolio/project4-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project4.jpg    1x,
+                        ./images/portfolio/project4-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <img
+                      srcset="
+                        ./images/portfolio/project4.jpg    1x,
+                        ./images/portfolio/project4-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project4.jpg"
+                      alt="навушники"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -177,11 +369,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery">
                 <div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project5.jpg"
-                    alt="дизайнерські коробки"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-mobile.jpg    1x,
+                        ./images/portfolio/project5-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project5-tablet.jpg    1x,
+                        ./images/portfolio/project5-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project5.jpg    1x,
+                        ./images/portfolio/project5-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project5.jpg    1x,
+                        ./images/portfolio/project5-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project5.jpg"
+                      alt="дизайнерські коробки"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -197,11 +417,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery">
                 <div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project6.jpg"
-                    alt="екран комп'ютер"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-mobile.jpg    1x,
+                        ./images/portfolio/project6-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project6-tablet.jpg    1x,
+                        ./images/portfolio/project6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project6.jpg    1x,
+                        ./images/portfolio/project6-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project6.jpg    1x,
+                        ./images/portfolio/project6-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project6.jpg"
+                      alt="екран комп'ютер"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -217,11 +465,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery"
                 ><div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project7.jpg"
-                    alt="журнал"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-mobile.jpg    1x,
+                        ./images/portfolio/project7-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project7-tablet.jpg    1x,
+                        ./images/portfolio/project7-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project7.jpg    1x,
+                        ./images/portfolio/project7-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project7.jpg    1x,
+                        ./images/portfolio/project7-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project7.jpg"
+                      alt="журнал"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -237,11 +513,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery"
                 ><div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project8.jpg"
-                    alt="лейба"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-mobile.jpg    1x,
+                        ./images/portfolio/project8-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project8-tablet.jpg    1x,
+                        ./images/portfolio/project8-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project8.jpg    1x,
+                        ./images/portfolio/project8-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project8.jpg    1x,
+                        ./images/portfolio/project8-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project8.jpg"
+                      alt="лейба"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -257,11 +561,39 @@
             <li class="portfolio-project-item">
               <a class="portfolio-project-gallery"
                 ><div class="portfolio-project-top-wrap">
-                  <img
-                    class="portfolio-project-foto"
-                    src="./images/portfolio/project9.jpg"
-                    alt="додаток"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-mobile.jpg    1x,
+                        ./images/portfolio/project9-mobile-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project9-tablet.jpg    1x,
+                        ./images/portfolio/project9-tablet-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project9.jpg    1x,
+                        ./images/portfolio/project9-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project9.jpg    1x,
+                        ./images/portfolio/project9-2x.jpg 2x
+                      "
+                      class="portfolio-project-foto"
+                      src="./images/portfolio/project9.jpg"
+                      alt="додаток"
+                    />
+                  </picture>
+
                   <p class="portfolio-project-text-top">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -281,77 +613,83 @@
     <!--footer-->
     <footer class="footer">
       <div class="container contact-web">
-        <div class="contacts">
-          <a class="contacts__link link" href="./index.html" lang="en"
-            >Web<span class="accent">Studio</span></a
-          >
-          <address class="contacts__adress">
-            <ul class="contacts__list list">
-              <li class="contacts__contacts-type">
-                <a
-                  class="contacts__map link"
-                  href="https://goo.gl/maps/CTmhHQKZqYB2jewa7"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
+        <div class="footer-tablet">
+          <div class="contacts">
+            <a class="contacts__link link" href="./index.html" lang="en"
+              >Web<span class="accent">Studio</span></a
+            >
+            <address class="contacts__adress">
+              <ul class="contacts__list list">
+                <li class="contacts__contacts-type">
+                  <a
+                    class="contacts__map link"
+                    href="https://goo.gl/maps/CTmhHQKZqYB2jewa7"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="contacts__contacts-type">
+                  <a class="contacts__contact link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="contacts__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="network">
+            <h3 class="network__text">приєднуйтесь</h3>
+            <ul class="network__list list">
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="instagram">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="contacts__contacts-type">
-                <a class="contacts__contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="twitter">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li>
-                <a class="contacts__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="facebook">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="network__icon">
+                <a class="network__icon-link-footer" href="linkedin">
+                  <svg class="network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="network">
-          <h3 class="network__text">приєднуйтесь</h3>
-          <ul class="network__list list">
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="instagram">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="twitter">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="facebook">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="network__icon">
-              <a class="network__icon-link-footer" href="linkedin">
-                <svg class="network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="form">
-          <form name="signup__form">
-            <h3 class="network__text">Підпишіться на розсилку</h3>
-            <label>
-              <input type="email" name="email" class="form__email" placeholder="E-mail" />
-            </label>
-            <div class="singup">
-              <button type="submit" class="button__singup">
-                Підписатися
-                <svg class="icon__singup" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+          <h3 class="network__text">Підпишіться на розсилку</h3>
+          <div role="group" class="send-button">
+            <form class="signup__form">
+              <div class="send-email">
+                <label>
+                  <input type="email" name="email" class="form__email" placeholder="E-mail" />
+                </label>
+              </div>
+              <div class="singup">
+                <button type="submit" class="button__singup">
+                  Підписатися
+                  <svg class="icon__singup" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
