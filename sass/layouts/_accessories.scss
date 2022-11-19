@@ -1,10 +1,10 @@
 .accessories {
-  width: 388px;
-  height: 4096px;
+  /* width: 388px;
+  height: 4096px;*/
   background-image: url(../images/accessories/background/bg-mobile.jpg);
 }
-.container {
-}
+/*.container {
+}*/
 .accessories__title {
   font-family: 'Roboto';
   font-style: normal;
@@ -12,16 +12,23 @@
   font-size: 24px;
   line-height: 1.16;
   color: #ffffff;
+  padding-left: 16px;
 }
+.accessories__vector {
+  fill: currentColor;
+}
+
 .accessories__list {
   display: flex;
-  flex-direction: row;
-  margin: 40px 24px 32px 24px;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  padding: 40px 24px 32px 24px;
 }
+/*
 .accessories__item {
-}
+}*/
+
 .accessories__button {
   padding: 8px 16px;
   width: 124px;
@@ -40,20 +47,73 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #01383a;
+    background: #86e543;
+    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+  }
 }
+
 .accessories__menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.accessories__menu .accessories__foto {
+  display: block;
+  width: 285px;
+  height: 276px;
 }
 .accessories__card {
 }
 .accessories__gallery {
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .accessories__top-wrap {
+  position: relative;
+  overflow: hidden;
 }
 .accessories__foto {
+  border-radius: 12px;
+  &:hover,
+  &:focus {
+    border: 2px solid #86e543;
+    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+  }
 }
 .accessories__top-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  background: linear-gradient(0deg, #01383a, #01383a);
+  padding: 16px 16px 52px 16px;
+  height: 100%;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .accessories__gallery:hover &,
+  .accessories__gallery:focus & {
+    transform: translateY(0);
+  }
 }
 .accessories__info {
+  padding: 8px 18px 28px 18px;
+}
+.accessories__thumb {
+  display: flex;
+  justify-content: space-between;
 }
 .accessories__name {
   font-family: 'Roboto';
@@ -62,6 +122,7 @@
   font-size: 22px;
   line-height: 1.18;
   color: #86e543;
+  margin-bottom: 8px;
   /* Inside auto layout */
   flex: none;
   order: 0;
