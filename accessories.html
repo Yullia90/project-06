@@ -28,40 +28,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--styles-->
+
+    <!--base styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-</html>
-<!--hero-->
-<section class="accessories">
-  <div class="container">
-    <!--button-->
-    <ul class="accessories__list list">
-      <li class="accessories__item">
-        <button class="accessories__button" type="button">All</button>
-      </li>
-      <li class="accessories__item">
-        <button class="accessories__button" type="button">Headsets</button>
-      </li>
-      <li class="accessories__item">
-        <button class="accessories__button" type="button">Keyboards</button>
-      </li>
-      <li class="accessories__item">
-        <button class="accessories__button" type="button">Mouses</button>
-      </li>
-    </ul>
-    <h1 class="accessories__title">All accessories</h1>
-    <svg class="accessories__vector" width="320" height="7">
-      <use href="./images/sprites.svg#icon-like"></use>
-    </svg>
-    <svg class="accessories__vector" width="320" height="7">
-      <use href="./images/sprites.svg#icon-like"></use>
-    </svg>
 
-    <!--menu-->
-    <ul class="accessories__menu list">
-      <li class="accessories__card">
-        <a href="/src/take-order.html" class="accessories__gallery">
+  <!--hero-->
+  <section class="accessories">
+    <div class="accessories__container">
+      <!--button-->
+      <nav> 
+        <ul class="accessories__list list">
+        <li class="accessories__item">
+          <button class="accessories__button" type="button" data-f="all">All</button>
+        </li>
+        <li class="accessories__item">
+          <button class="accessories__button" type="button" data-f="headsets">Headsets</button>
+        </li>
+        <li class="accessories__item">
+          <button class="accessories__button" type="button" data-f="keyboards">Keyboards</button>
+        </li>
+        <li class="accessories__item">
+          <button class="accessories__button" type="button" data-f="mouses">Mouses</button>
+        </li>
+      </ul>
+    </nav>
+     
+         <div class="accessories__menu list">
+      <div class="accessories__card box headsets ">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -95,9 +90,9 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
+      </div>
+      <div class="accessories__card box headsets">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -131,9 +126,9 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
+      </div>
+      <div class="accessories__card box mouses">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -167,9 +162,9 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
+      </div>
+      <div class="accessories__card box keyboard">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -203,9 +198,9 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
+      </div>
+      <div class="accessories__card box headsets">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -239,9 +234,9 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
+      </div>
+      <div class="accessories__card box keyboards">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -275,9 +270,9 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
+      </div>
+      <div class="accessories__card box mouses">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -311,9 +306,9 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
+      </div>
+      <div class="accessories__card box keyboards">
+        <a href="./take-order.html" class="accessories__gallery">
           <div class="accessories__top-wrap">
             <img
               srcset="
@@ -347,295 +342,6 @@
             </div>
           </div>
         </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image9.jpg    1x,
-                ./images/accessories/accessories-page/image9-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image9.jpg"
-              alt="keyboard"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              Steampunk Anti-Ghosting <br />
-              Mechanical Keyboardd
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">82.40 USD</p>
-              <p class="accessories__new-price">62.40 USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image10.jpg    1x,
-                ./images/accessories/accessories-page/image10-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image10.jpg"
-              alt="headphones"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              Wired Gaming <br />
-              Headphones For PS4
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">72.65 USD</p>
-              <p class="accessories__new-price">47.55 USD USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image11.jpg    1x,
-                ./images/accessories/accessories-page/image11-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image11.jpg"
-              alt="headphones"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              HAVIT USB 3.5mm <br />
-              Gaming Headset
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">65.14 USD</p>
-              <p class="accessories__new-price">53.98 USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image12.jpg    1x,
-                ./images/accessories/accessories-page/image12-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image12.jpg"
-              alt="headphones"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              Somic G936N PS4 <br />
-              Gaming Headset
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">102.00 USD</p>
-              <p class="accessories__new-price">66.78 USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image13.jpg    1x,
-                ./images/accessories/accessories-page/image13-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image13.jpg"
-              alt="mouse"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              AULA SI9006 Gaming<br />
-              Mouse
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">89.13 USD</p>
-              <p class="accessories__new-price">64.13 USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image14.jpg    1x,
-                ./images/accessories/accessories-page/image14-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image14.jpg"
-              alt="mouse"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              HXSJ A903 3200 DPI USB<br />
-              Wired Gaming Mouse
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">50.49 USD</p>
-              <p class="accessories__new-price">32.49 USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image15.jpg    1x,
-                ./images/accessories/accessories-page/image15-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image15.jpg"
-              alt="headphones"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              G95 Light Surround <br />
-              Gaming Headset
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">78.98 USD</p>
-              <p class="accessories__new-price">50.98 USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="accessories__card">
-        <a class="accessories__gallery">
-          <div class="accessories__top-wrap">
-            <img
-              srcset="
-                ./images/accessories/accessories-page/image16.jpg    1x,
-                ./images/accessories/accessories-page/image16-2x.jpg 2x
-              "
-              class="accessories__foto"
-              src="./images/accessories/accessories-page/image16.jpg"
-              alt="keyboard"
-            />
-            <p class="accessories__top-text">
-              100% Brand new and high quality! <br />
-              Ergonomic in design makes it more <br />
-              adjustable to use. <br />
-              More fashionable for your daily use, <br />
-              such as playing games. <br />
-              Built-in high sensitivity and noise <br />
-              reduction microphone. <br />
-              It is not easy to break or deform, and <br />
-              wear comfortable, no pressure.
-            </p>
-          </div>
-          <div class="accessories__info">
-            <h2 class="accessories__name">
-              YMDK Double Shot 104 <br />
-              Keyboard
-            </h2>
-            <div class="accessories__thumb">
-              <p class="accessories__price">71.77 USD</p>
-              <p class="accessories__new-price">46.77 USD</p>
-            </div>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+      </div>
+  </section>
+</html>
